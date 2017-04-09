@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #373434;	
+}
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+
+/*wrapper and cube positions and sizes*/
+
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+
+.cube {
+	position: relative;
+	width: 200px;
+	margin: 50px 75px;
+	transform-style: preserve-3d;
+	animation: spin 10s infinite linear;
+}
+
+.angle {
+	transform-style: preserve-3d;
+	position: relative;
+	transform: rotateX(-25deg);
+}
+
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+/*cube*/
+
+.face {
+	background: rgba(0,120,255,0.5) ;
+	box-shadow: inset 0 0 50px #001919;
+	border: solid 15px #E5A11F;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+
+.left {
+	transform: rotateY(-270deg) translateX(-100px);
+	transform-origin: center left;
+}
+
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+.front {
+	transform: translateZ(100px);
+}
+
+/*Interior Designs*/
+
+div .outer-circle {
+	border: solid 5px #E5A11F;
+	border-radius: 50%;
+	box-shadow: inset 0 0 15px #001919;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 180px;
+	height: 180px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .outer-square {
+	border: solid 10px #E5A11F;
+	box-shadow: inset 0 0 15px #001919;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 141px;
+	height: 141px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .inner-square {
+	border: solid 4px #E5A11F;
+	box-shadow: inset 0 0 15px #001919;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90px;
+	height: 90px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .inner-circle {
+	border: solid 5px #E5A11F;
+	border-radius: 50%;
+	box-shadow: inset 0 0 15px #001919;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90px;
+	height: 90px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+
+
+
+
+
+
