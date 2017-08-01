@@ -2,6 +2,10 @@
 
 Rotating Jedi Holocron made out of CSS.
 
+## Install
+
+No special installation is needed. This is plain HTML and CSS, so clone it to your local machine and run on your preferred local server.
+
 ## Inspiration and Guidance
 
 [Create A CSS Cube](https://davidwalsh.name/css-cube) -- David Walsh. This tutorial helped me wrap my head around constructing cubes and shapes using CSS.
