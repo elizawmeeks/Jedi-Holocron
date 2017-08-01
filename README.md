@@ -1,5 +1,7 @@
 # Jedi Holocron
 
+[Animated Jedi Holocron](https://elizawmeeks.github.io/Jedi-Holocron/)
+
 Rotating Jedi Holocron made out of CSS.
 
 ## Install
